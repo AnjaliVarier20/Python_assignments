@@ -1,0 +1,10 @@
+odd = -1
+even = 0
+print('odd numbers')
+while odd <=18:
+    odd = 2 + odd
+    print(odd)
+print('even numbers')
+while even <=18:
+    even = 2 + even
+    print(even)
