@@ -1,0 +1,39 @@
+class Product:
+    def __init__(self, name, price, brand, warranty):
+        self.name = name
+        self.price = price
+        self.brand = brand
+        self.warranty = warranty
+
+    def display(self):
+        print(f"Name: {self.name}")
+        print(f"Price: Rs.{self.price}")
+        print(f"Brand: {self.brand}")
+
+class Electronics(Product):
+    type = "Electronics"
+    count = 10
+
+    def __init__(self, name, price, brand, warranty):
+        super().__init__(name, price, brand, warranty)
+
+    def display_details(self):
+   
+        print(f"Name: {self.name}")
+        print(f"Price: Rs.{self.price}")
+        print(f"Brand: {self.brand}")
+        print(f"Warranty: {self.warranty}")
+        print(f"Type: {self.type}")
+        print(f"Count: {self.count}")
+
+    def Total_price(self):
+        total = self.count * self.price
+        print(f"Total price is : Rs {total}")
+
+electronic_product = Electronics("Laptop", 1200, "Dell", "2 years")
+
+electronic_product.display()
+print("__________________________")
+electronic_product.display_details()
+print("__________________________")
+electronic_product.Total_price()
