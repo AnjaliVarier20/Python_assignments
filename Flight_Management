@@ -1,0 +1,22 @@
+ 
+class BookingFlight(DomesticFlight):
+    def __init__(self, flight_no, base_price, total_seats, tax_percent, booked_seats):
+        super().__init__(flight_no, base_price, total_seats, tax_percent)
+        self.booked_seats = booked_seats
+        print("entered BookingFlight method")
+                  
+        def book_seats(self):
+         total_seats = super().total_seats
+         return total_seats - booked_seats
+        print("Checked Seat availibility")
+
+        def check_seat_availibility(self):
+            if booked_seats <= book_seats:
+                print(f"Booking successful with", {booked_seats})
+            else:
+                print("Booking unsuccessful, not enough seats")
+        def calculate_price(self):
+            return booked_seats*calculate_price
+        print(f"Final price for ", {booked_seats}, "number of seats is", {calculate_price})
+    
+Flight1 = BookingFlight("Spicejet", 15000, 100, 18, 10)
